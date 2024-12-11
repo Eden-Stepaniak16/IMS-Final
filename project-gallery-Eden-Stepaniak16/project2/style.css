@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  height: 800px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: black;
+  gap: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  color: white;
+  font-family: open sans, bold;
+  letter-spacing: 10px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  background-color: gray;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.album-cover {
+  width: 450px;
+  height: auto;
+}
+
+.album-artist {
+  color: white;
+  font-family: open sans, bold;
+  letter-spacing: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: -165px;
+}
+
+.song-name {
+  color: white;
+  font-family: open sans, bold;
+  letter-spacing: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1px;
+  margin-left: -310px;
+}
+
+.checked {
+  color: white;
+  font-size: 60px;
+  margin-top: -55px;
+  margin-left: 390px;
+}
+.seek-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#current-time,
+#duration {
+  color: white;
+  font-size: 0.9rem;
+}
+
+#seek-slider {
+  width: 65%;
+  height: 5px;
+  background: white;
+  outline: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .album-cover {
+    width: 300px;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .album-cover {
+    width: 200px;
+  }
+
+  button {
+    width: 35px;
+    height: 35px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+}
